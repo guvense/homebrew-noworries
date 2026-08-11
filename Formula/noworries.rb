@@ -1,7 +1,7 @@
 class Noworries < Formula
   desc "Ephemeral infra harness that lets an AI verify the changes it just made"
   homepage "https://github.com/guvense/noworries"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   BASE = "https://github.com/guvense/noworries/releases/download/v#{version}".freeze
@@ -9,18 +9,18 @@ class Noworries < Formula
   on_macos do
     on_arm do
       url "#{BASE}/noworries-aarch64-apple-darwin.tar.gz"
-      sha256 "54c010e430322d96c0856bfba47edc737d5e9904c0fff66ed38aed3da10fe960"
+      sha256 "8e46850f93d63aa260d80a33b1bb8a704b86013a156387e5d77ac2589261503b"
     end
     on_intel do
       url "#{BASE}/noworries-x86_64-apple-darwin.tar.gz"
-      sha256 "020266efef0ec820ed51b4576e3d47aa39a7014839d8e49bbe279e45d94bb84c"
+      sha256 "3daf2003d7dd2f0a72394e66dc66ceef5717010d0256a0b530d32cd8ef8bd988"
     end
   end
 
   on_linux do
     on_intel do
       url "#{BASE}/noworries-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ea9b9ae0d790bb2e6403d645425bd6f943059d1efaf3e0a4638caac76615f64e"
+      sha256 "612f33ff419c134d754b5fcc7d8e1c936b7dcda253360ec41546de0461e62fd3"
     end
   end
 
